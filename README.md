@@ -42,7 +42,7 @@ It is implemented in the [`model_deployment.py`](model_deployment.py) script whi
    ```bash
    docker login nvcr.io
    Username: $oauthtoken
-   Password: <your NGC API key>
+   Password: <NGC API key>
    ```
 
 2. **Pulling the Triton Inference Server Image**
