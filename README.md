@@ -4,7 +4,7 @@
 
 The **YOLOv11** model (saved as a `.pt` file) was converted into a **deployment-ready ONNX format** for inference on the **NVIDIA Triton Inference Server**.
 
-All conversion logic is implemented in the [`model_conversion.py`](conversion/model_conversion.py) script.
+All conversion logic is implemented in the [`model_conversion.py`](model_conversion.py) script.
 
 ### 🔄 Conversion Details
 
@@ -31,7 +31,7 @@ After export, the resulting ONNX model is stored in a **Triton-compatible reposi
 
 The deployment of the YOLOv11 ONNX model was performed using the **NVIDIA Triton Inference Server**, running inside a **Docker container**.  
 
-It is implemented in the [`model_deployment.py`](deployment/model_deployment.py) script which performs inference using both **PyTorch** and **Triton**, compares their outputs, and saves the visualization and error analysis results.
+It is implemented in the [`model_deployment.py`](model_deployment.py) script which performs inference using both **PyTorch** and **Triton**, compares their outputs, and saves the visualization and error analysis results.
 
 ---
 
