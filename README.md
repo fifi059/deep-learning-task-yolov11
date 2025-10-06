@@ -82,7 +82,7 @@ The [`model_deployment.py`](deployment/model_deployment.py) script runs the foll
 - Sends it to the Triton server for inference via the `httpclient.InferenceServerClient`.  
 - Runs the same inference locally using the PyTorch model (`best.pt`).  
 - Compares the predicted bounding boxes, confidence scores, and keypoints.  
-- Saves visualization outputs and numerical error metrics in:
+- Saves visualization outputs as well as error metrics in:
   ```
   deployment_results/
   ```
