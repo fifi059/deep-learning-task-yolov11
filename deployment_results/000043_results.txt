@@ -1,0 +1,16 @@
+Pytorch vs Ground-truth BBox Error: 1.889, Pytorch Kpt Error: 0.551
+Triton vs Ground-truth  BBox Error: 2.392, Triton  Kpt Error: 0.648
+
+PyTorch - Triton BBox error (mean): 0.200
+PyTorch - Triton Kpt  error (mean): 0.214
+
+Ground Truth BBox: [88.5, 131.0, 86.0, 80.0]
+Pytorch BBox: [89.1, 131.2, 84.4, 79.2], Conf: 0.940
+Triton  BBox: [89.2, 131.3, 83.8, 79.3], Conf: 0.940
+
+Ground Truth Keypoints:
+[[68.0, 111.0], [109.0, 112.0], [90.0, 136.0], [67.0, 150.0], [110.0, 151.0]]
+Pytorch Keypoints:
+[[68.2, 111.5], [109.4, 111.8], [89.9, 136.4], [67.7, 150.7], [110.4, 150.9]]
+Triton  Keypoints:
+[[68.3, 111.2], [109.7, 111.5], [90.1, 136.2], [67.9, 150.9], [110.6, 151.1]]
