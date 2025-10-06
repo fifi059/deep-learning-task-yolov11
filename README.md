@@ -76,7 +76,7 @@ It is implemented in the [`model_deployment.py`](model_deployment.py) script whi
 ### 🧠 Inference and Validation
 
 After deployment, inference was performed using the **Triton Python HTTP client**.  
-The [`model_deployment.py`](deployment/model_deployment.py) script runs the following process:
+The [`model_deployment.py`](model_deployment.py) script runs the following process:
 
 - Loads a sample test image.  
 - Sends it to the Triton server for inference via the `httpclient.InferenceServerClient`.  
