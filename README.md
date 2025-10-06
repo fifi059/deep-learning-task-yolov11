@@ -37,21 +37,21 @@ It is implemented in the [`model_deployment.py`](model_deployment.py) script whi
 
 ### ⚙️ Deployment Steps
 
-1. **Login to NVIDIA NGC Registry**
-   Before pulling the Triton image, authenticate with your NVIDIA NGC account:
+1. **Logging in to NVIDIA NGC Registry**
+   Before pulling the Triton image, we authenticate with our NVIDIA NGC account:
    ```bash
    docker login nvcr.io
    Username: $oauthtoken
    Password: <your NGC API key>
    ```
 
-2. **Pull the Triton Inference Server Image**
+2. **Pulling the Triton Inference Server Image**
    ```bash
    docker pull nvcr.io/nvidia/tritonserver:24.07-py3
    ```
 
-3. **Prepare the Model Repository**
-   Make sure your model repository is available locally with the following structure:
+3. **Preparing the Model Repository**
+   We make sure our model repository is available locally with the following structure:
    ```
    model_repository/
    └── yolo11/
@@ -60,8 +60,8 @@ It is implemented in the [`model_deployment.py`](model_deployment.py) script whi
            └── model.onnx
    ```
 
-4. **Run Triton Server**
-   Start the server inside a Docker container by mounting your local repository:
+4. **Running Triton Server**
+   Starting the server inside a Docker container by mounting our local repository:
    ```bash
    docker run -d \
      --name triton_yolo11 \
