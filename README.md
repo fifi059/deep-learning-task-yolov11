@@ -84,7 +84,7 @@ The [`model_deployment.py`](deployment/model_deployment.py) script runs the foll
 - Compares the predicted bounding boxes, confidence scores, and keypoints.  
 - Saves visualization outputs and numerical error metrics in:
   ```
-  deployment/results/
+  deployment_results/
   ```
 
 ---
